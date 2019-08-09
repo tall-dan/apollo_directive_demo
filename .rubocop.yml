@@ -7,12 +7,6 @@ AllCops:
 
 Metrics/LineLength:
   Max: 120
-  Exclude:
-    - 'config/initializers/devise.rb'
-
-Metrics/MethodLength:
-  Exclude:
-    - 'db/migrate/*'
 
 Documentation:
   Enabled: false
@@ -21,5 +15,3 @@ Style/PercentLiteralDelimiters:
   PreferredDelimiters:
     '%i': '[]'
     '%w': '[]'
-
-

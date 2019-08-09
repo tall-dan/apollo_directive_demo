@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
@@ -17,7 +18,6 @@ gem 'puma', '~> 3.11'
 gem 'devise'
 gem 'rolify'
 
-gem 'graphql'
 gem 'mail'
 
 group :development, :test do
