@@ -7,6 +7,13 @@ class BaseQuery < Types::Base
   field :current_user, Types::UserType, null: true, description: 'The currently signed in user'
 
   def current_user
-    context[:current_user]
+    OpenStruct.new(
+      id: 'oi32n',
+      email: 'guy@place.com',
+      first_name: 'Wu',
+      last_name: 'Tang',
+      created_at: Time.now,
+      updated_at: Time.now
+    )
   end
 end

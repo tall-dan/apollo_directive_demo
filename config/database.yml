@@ -2,17 +2,17 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  username: wedding_website
+  username: apollo_demo
 
 
 development:
   <<: *default
-  database: wedding_website_dev
+  database: apollo_demo_dev
 
 test: &test
   <<: *default
-  database: wedding_website_test
+  database: apollo_demo_test
 
 production:
   <<: *default
-  database: wedding_website_prod
+  database: apollo_demo_prod

@@ -15,14 +15,12 @@ gem 'puma', '~> 3.11'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-gem 'devise'
-gem 'rolify'
-
-gem 'mail'
+gem 'graphiql-rails', '~> 1.4.11'
+gem 'graphql', '~> 1.9.3'
+gem 'graphql-batch'
 
 group :development, :test do
   gem 'bootsnap'
-  gem 'graphiql-rails', '~> 1.4.11'
   gem 'listen'
   gem 'pry'
   gem 'pry-byebug'

@@ -1,6 +1,6 @@
 AllCops:
   Exclude:
-    - 'node_modules/**/*'
+    - 'client/node_modules/**/*'
     - 'bin/*'
     - 'vendor/**/*'
     - 'config/environments/*'
@@ -15,3 +15,7 @@ Style/PercentLiteralDelimiters:
   PreferredDelimiters:
     '%i': '[]'
     '%w': '[]'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'

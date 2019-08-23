@@ -2,7 +2,7 @@
 
 class GraphQLController < ApplicationController
   def execute
-    result = WeddingWebsiteSchema.execute(
+    result = DemoSchema.execute(
       query,
       variables: variables,
       context: context,
@@ -40,7 +40,7 @@ class GraphQLController < ApplicationController
   end
 
   def context
-    { current_user: current_user }
+    {}
   end
 
   def variables
