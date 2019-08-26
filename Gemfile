@@ -18,9 +18,10 @@ gem 'puma', '~> 3.11'
 gem 'graphiql-rails', '~> 1.4.11'
 gem 'graphql', '~> 1.9.3'
 gem 'graphql-batch'
+gem 'foreman'
 
+gem 'bootsnap'
 group :development, :test do
-  gem 'bootsnap'
   gem 'listen'
   gem 'pry'
   gem 'pry-byebug'

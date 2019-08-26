@@ -7,9 +7,15 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { results: {} }
-  }
+    const defaultQuery =
+    `query {
+      currentUser {
+      createdAt @myspecialinclude(ifElement: "a", inArray: ["b"])
+      }
+    }`
 
+    this.state = { results: {}, query: defaultQuery }
+  }
 
   persistQuery = (event) => {
     this.setState({query: event.target.value});
@@ -36,11 +42,7 @@ class App extends Component {
             <Col xs={6}>
               <textarea className="query-input" onChange={this.persistQuery}>
               {
-`query {
-  currentUser {
-    createdAt @myspecialinclude(ifElement: "a", inArray: ["b"])
-  }
-}`
+                this.state.query
               }
               </textarea>
               <input type="submit" value="Submit" onClick={this.sendQuery} />
