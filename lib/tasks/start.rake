@@ -1,4 +1,6 @@
+# frozen_string_literal: true
+
 desc 'Start production server'
 task :start do
-	exec 'NODE_ENV=production NPM_CONFIG_PRODUCTION=true npm run postinstall && foreman start'
+  exec 'NODE_ENV=production NPM_CONFIG_PRODUCTION=true npm run postinstall && foreman start'
 end

@@ -10,7 +10,8 @@ class App extends Component {
     const defaultQuery =
     `query {
       currentUser {
-      createdAt @myspecialinclude(ifElement: "a", inArray: ["b"])
+      updatedAt
+      createdAt @includetranslation(ifElement: "a", inArray: ["b"])
       }
     }`
 

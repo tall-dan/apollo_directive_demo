@@ -3,7 +3,7 @@
 require 'graphql'
 module GraphQL
   module Directives
-    class MySpecialInclude < GraphQL::Schema::Directive
+    class IncludeTranslation < GraphQL::Schema::Directive
       locations(
         GraphQL::Schema::Directive::FIELD,
         GraphQL::Schema::Directive::FRAGMENT_SPREAD,

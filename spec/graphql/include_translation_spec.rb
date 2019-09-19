@@ -2,7 +2,7 @@
 
 require 'graphql/directives/include'
 
-describe GraphQL::Directives::MySpecialInclude do
+describe GraphQL::Directives::IncludeTranslation do
   describe '.locations' do
     let(:locations) { described_class.locations }
 
